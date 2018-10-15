@@ -1,0 +1,19 @@
+@import './base/_reset';
+@import './base/_vars';
+@import './base/_fonts';
+@import './base/_mixins';
+
+// Mobile first
+@import './containers/layout/mobile/_layout';
+@import './components/searchForm/mobile/_searchForm';
+@import './components/searchResult/mobile/_searchResult';
+
+
+// Tablet and up
+@media screen 
+and (min-width: 768px) {
+
+  @import './containers/layout/tablet/_layout';
+  @import './components/searchForm/tablet/_searchForm';
+  @import './components/searchResult/tablet/_searchResult';
+}

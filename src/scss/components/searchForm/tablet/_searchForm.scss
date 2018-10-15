@@ -1,0 +1,14 @@
+.search-form {
+  justify-content: flex-end;
+  margin-bottom: 40px;
+
+  &__input {
+    width: 100px;
+    transition: width .1s ease-in;
+
+    &:focus {
+      border: 1px solid $inputFocus;
+      width: 200px;
+    } 
+  }
+}
