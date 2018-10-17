@@ -1,2 +1,3 @@
-# react-get-data
-React async/await boilerplate app
+# IMDB Fetch movie from OMDB api
+
+React build fetching a movie using the OMDB api
