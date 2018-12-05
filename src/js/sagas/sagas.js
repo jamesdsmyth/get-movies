@@ -18,7 +18,7 @@ function* fetchApi(data) {
     const response = yield axios.get(`http://www.omdbapi.com/?t=${phrase}&apikey=21af3ff2`);
     const data = yield response.data;
 
-    console.log('THE DATA', data);
+    console.log('THE DATA IS HERE', data);
 
     if(data.Response !== 'False') {
       yield put(fetchApiSuccess(data));
