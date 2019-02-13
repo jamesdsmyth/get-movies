@@ -28,6 +28,10 @@ class Container extends Component {
     });
   }
 
+  textboxAnotherChange(e) {
+    console.log(e.target.value);
+  }
+
   submitButtonClicked(e) {
     e.preventDefault();
     const commaString = this.concatWords();
@@ -43,7 +47,7 @@ class Container extends Component {
 
   render() {
 
-    console.log('imdb response', this.props.imdb.movie);
+    console.log('the imdb response', this.props.imdb.movie);
     return (
       <div className="container">
         <SearchForm 
