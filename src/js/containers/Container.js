@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { connect } from 'react-redux';
 import { dispatchFetchApi } from '../actions/actions';
 
 import SearchForm from '../components/SearchForm';
 import SearchResult from '../components/SearchResult';
+
+// Ransom note component for testing
+import RansomNote from '../components/RansomNote';
 
 class Container extends Component {
   constructor() {
@@ -46,8 +49,6 @@ class Container extends Component {
   }
 
   render() {
-
-    console.log('the imdb response', this.props.imdb.movie);
     return (
       <div className="container">
         <SearchForm 
@@ -65,6 +66,8 @@ class Container extends Component {
               Movie not found!
             </h1>
         }
+
+        <RansomNote />
       </div>
     )
   }
