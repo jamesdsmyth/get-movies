@@ -8,12 +8,15 @@
 @import './components/searchForm/mobile/_searchForm';
 @import './components/searchResult/mobile/_searchResult';
 
+@import './components/ransomNote/mobile/_ransomNote';
+
 
 // Tablet and up
-@media screen 
-and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   @import './containers/layout/tablet/_layout';
   @import './components/searchForm/tablet/_searchForm';
   @import './components/searchResult/tablet/_searchResult';
+
+  @import './components/ransomNote/tablet/_ransomNote';
 }

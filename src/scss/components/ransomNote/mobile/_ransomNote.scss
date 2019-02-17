@@ -1,0 +1,19 @@
+.ransom-note-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .ransom-note-section {
+    padding: 0 10px;
+  }
+
+  .ransom-note-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .ransom-note-input {
+    width: calc(100% - 22px);
+    border: 1px solid $input;
+    padding: 10px;
+  }
+}
